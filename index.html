@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Інформатика</title>
+	<style type="text/css">
+	 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1;
+}
+
+p {
+  margin: 0 0 10px;  
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+  width: 100%;
+  padding: 0 23px;
+
+}
+
+.header__img {
+  display: inline;
+}
+
+.header__inner {
+     margin: 0 auto;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 47px 0 0 0;
+    max-width: 390px;
+}
+
+.nav {
+    display: contents;
+    font-size: 13px;
+    font-weight: 400;
+    
+}
+
+.nav__link {
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 53px;
+    border-radius: 4px;
+    
+    border: 1px solid #000;
+    
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    letter-spacing: 0.365em;
+    background-color: #000;
+    color: #fff;
+}
+
+#nav__link-btn {
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 53px;
+    border-radius: 4px;
+    
+    border: 1px solid #000;
+    
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+#nav__link-btn:hover {
+    letter-spacing: 0.365em;
+    background-color: #000;
+    color: #fff;
+}
+
+.nav__link:first-child {
+  margin: 60px 0 30px 0;
+}
+
+/* Конец шапки */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 481px;
+  
+}
+.intro__inner {
+    width: 100%;
+    max-width: 390px;
+    margin: auto;
+    
+    text-align: center;
+}
+
+.intro__title{
+    margin: 0 0 20px;
+    font-size: 60px;
+    color: #000000;
+    font-weight: 200;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.intro__subtitle{
+  margin: 0 0 25px;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+}
+
+.sosial {
+  margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline
+}
+
+.icon {
+  margin: 0 0 0 50px;
+  transition: .2s;
+}
+
+.icon:hover {
+  opacity: .5;
+}
+
+.icon:last-child {
+  margin: 0;
+ }
+
+ .teh {
+  margin-top: 100px;
+}
+
+#teh__wrapper {
+  margin: 0 auto;
+  max-width: 390px;
+}
+
+.teh__text {
+  text-align: center;
+}
+
+.text__teh {
+  margin-bottom: 52px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: #000000;
+}
+
+.block__teh {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teh__block {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block:last-child {
+  margin: 0;
+}
+
+.teh__item {
+  
+}
+
+.teh__text-big {
+  margin: 0 0 0 -55px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper {
+  text-align: center;
+}
+
+.tehinfo__block {
+  transform: translateY(-40%);
+}
+
+.tehinfo__item {
+
+}
+
+.tehinfo__subtext {
+  margin: -60px 0 0 0;
+  width: 250px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 23px;
+  color: #000000;
+}
+
+.block__teh-right {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.teh__block-right {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block-right:last-child {
+  margin: 0;
+}
+
+.teh__item-right {
+  
+}
+
+.teh__text-big-right {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper-right {
+  text-align: center;
+}
+
+.tehinfo__block-right {
+  transform: translateY(-40%);
+}
+
+.tehinfo__item-right {
+
+}
+
+.tehinfo__subtext-right {
+  margin: -70px 0 0 0;
+  width: 250px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 23px;
+  text-align: end;
+  color: #000000;
+}
+
+.block__teh-center {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.teh__block-center {
+  margin: 0 91px 0 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.teh__block-center:last-child {
+  margin: 0;
+}
+
+.teh__item-center {
+  
+}
+
+.teh__text-big-center {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 200px;
+  color: rgba(16, 16, 16, 0.08);
+}
+
+.subteh__wrapper-center {
+  text-align: center;
+}
+
+.tehinfo__block-center {
+  transform: translateY(-30%);
+}
+
+.tehinfo__item-center {
+
+}
+
+.tehinfo__subtext-center {
+  text-align: center;
+  margin: -50px 0 0 0;
+  width: 343px;
+  height: 196px;
+  font-weight: 200;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+  font-size: 23px;
+  color: #000000;
+}
+
+
+.class {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.wrapp__class {
+   display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+    justify-content: center;
+}
+
+.text__class {
+  text-align: center;
+}
+
+.class__wrapper{
+    
+    padding: 0 40px;
+    margin: 25px 0;
+    
+    text-align: center;
+  
+}
+
+.nav__linkBtn {
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px 10px;
+    border-radius: 4px;
+    
+    border: 1px solid #000;
+    
+    font-size: 23px;
+    font-weight: 300;
+    color: #000000;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.nav__linkBtn:hover {
+    letter-spacing: 0.20em;
+    background-color: #000;
+    color: #fff;
+}
+
+.new {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.new__wrapper {
+  text-align: center;
+}
+
+.new__text {
+  font-weight: 200;
+  font-size: 72px;
+  line-height: 88px;
+
+
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+}
+
+.new__parag {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 17px;
+
+  text-align: center;
+  letter-spacing: 0.18em;
+  text-transform: lowercase;
+
+  color: #000000;
+
+}
+
+.new__error {
+  margin: 100px 0 0 0;
+}
+
+.text__new {
+  font-weight: 200;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #000000;
+}
+
+.footer {
+   
+   background-color: #000000;
+}
+
+.logo__link {
+  color: #fff;
+  margin: 0 0 125px 0;
+}
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__wrapper {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright {
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.footer__link {
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.footerText {
+
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link:last-child {
+  margin: 0;
+}
+	</style>
+</head>
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+			<div class="header__img">
+				<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35 1H2C1.44772 1 1 1.44772 1 2V35C1 35.5523 1.44772 36 2 36H35C35.5523 36 36 35.5523 36 35V2C36 1.44772 35.5523 1 35 1Z" stroke="black"/>
+<path d="M11.002 26C10.4497 26 10.002 25.5523 10.002 25V15.34C10.002 14.7877 10.4497 14.34 11.002 14.34H11.114C11.6663 14.34 12.114 14.7877 12.114 15.34V25C12.114 25.5523 11.6663 26 11.114 26H11.002ZM11.058 12.096C10.6473 12.096 10.3027 11.964 10.024 11.7C9.76 11.436 9.628 11.1133 9.628 10.732C9.628 10.336 9.76 10.006 10.024 9.742C10.3027 9.478 10.6473 9.346 11.058 9.346C11.4687 9.346 11.806 9.478 12.07 9.742C12.3487 9.99133 12.488 10.3067 12.488 10.688C12.488 11.084 12.356 11.4213 12.092 11.7C11.828 11.964 11.4833 12.096 11.058 12.096Z" fill="black"/>
+<path d="M23.2849 26C22.7326 26 22.2849 25.5523 22.2849 25V12.514H17.9619C17.4333 12.514 17.0049 12.0855 17.0049 11.557V11.557C17.0049 11.0285 17.4333 10.6 17.9619 10.6H28.7859C29.3144 10.6 29.7429 11.0285 29.7429 11.557V11.557C29.7429 12.0855 29.3144 12.514 28.7859 12.514H24.4629V25C24.4629 25.5523 24.0152 26 23.4629 26H23.2849Z" fill="black"/>
+</svg>
+
+
+			</div>
+		<nav class="nav">
+    	<a class="nav__link" href="#">Додому</a>
+    	<a class="nav__link" href="#">Контакти</a>
+   		<a class="nav__link" href="#">Допомога</a>
+    	<a class="nav__link" href="#">Домашнє завдання</a>
+    </nav>
+  </div>
+	</div>
+</header><!-- Конец шапки -->
+
+<div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+             <h1 class="intro__title">Вітання!</h1>
+             <h2 class="intro__subtitle">Зараз я поясню що до чого</h2>
+             <a id="nav__link-btn" href="#teh__wrapper">Натисни</a>
+              <div class="sosial">
+						<div class="icon">
+						<a href="https://www.instagram.com/gh07.t/">
+							<svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.5 8.39583C14.0949 8.39583 12.7214 8.81249 11.5531 9.5931C10.3849 10.3737 9.4743 11.4832 8.93661 12.7814C8.39891 14.0795 8.25822 15.5079 8.53234 16.886C8.80645 18.264 9.48306 19.5299 10.4766 20.5234C11.4701 21.5169 12.736 22.1935 14.114 22.4677C15.4921 22.7418 16.9205 22.6011 18.2186 22.0634C19.5168 21.5257 20.6263 20.6151 21.4069 19.4469C22.1875 18.2786 22.6042 16.9051 22.6042 15.5C22.6042 13.6159 21.8557 11.8089 20.5234 10.4766C19.1911 9.14431 17.3841 8.39583 15.5 8.39583ZM15.5 21.3125C14.3504 21.3125 13.2266 20.9716 12.2707 20.3329C11.3149 19.6942 10.5699 18.7864 10.1299 17.7243C9.69002 16.6623 9.57491 15.4936 9.79918 14.366C10.0235 13.2385 10.577 12.2028 11.3899 11.3899C12.2028 10.577 13.2385 10.0235 14.366 9.79918C15.4936 9.57491 16.6623 9.69002 17.7243 10.1299C18.7864 10.5699 19.6942 11.3149 20.3329 12.2707C20.9716 13.2266 21.3125 14.3504 21.3125 15.5C21.3125 17.0416 20.7001 18.52 19.6101 19.6101C18.52 20.7001 17.0416 21.3125 15.5 21.3125V21.3125ZM22.6042 0H8.39583C6.16912 0 4.03361 0.884558 2.45908 2.45908C0.884558 4.03361 0 6.16912 0 8.39583V22.6042C0 23.7067 0.217164 24.7985 0.639095 25.8171C1.06102 26.8357 1.67946 27.7613 2.45908 28.5409C4.03361 30.1154 6.16912 31 8.39583 31H22.6042C23.7067 31 24.7985 30.7828 25.8171 30.3609C26.8357 29.939 27.7613 29.3205 28.5409 28.5409C29.3205 27.7613 29.939 26.8357 30.3609 25.8171C30.7828 24.7985 31 23.7067 31 22.6042V8.39583C31 7.29328 30.7828 6.20152 30.3609 5.18289C29.939 4.16426 29.3205 3.23871 28.5409 2.45908C27.7613 1.67946 26.8357 1.06102 25.8171 0.639095C24.7985 0.217164 23.7067 0 22.6042 0V0ZM29.7083 22.6042C29.7083 24.4883 28.9599 26.2953 27.6276 27.6276C26.2953 28.9599 24.4883 29.7083 22.6042 29.7083H8.39583C6.51169 29.7083 4.70472 28.9599 3.37243 27.6276C2.04014 26.2953 1.29167 24.4883 1.29167 22.6042V8.39583C1.29167 6.51169 2.04014 4.70472 3.37243 3.37243C4.70472 2.04014 6.51169 1.29167 8.39583 1.29167H22.6042C24.4883 1.29167 26.2953 2.04014 27.6276 3.37243C28.9599 4.70472 29.7083 6.51169 29.7083 8.39583V22.6042ZM25.1875 7.10417C25.1875 7.35963 25.1117 7.60936 24.9698 7.82178C24.8279 8.03419 24.6262 8.19975 24.3901 8.29751C24.1541 8.39527 23.8944 8.42085 23.6438 8.37101C23.3933 8.32117 23.1631 8.19816 22.9825 8.01751C22.8018 7.83687 22.6788 7.60672 22.629 7.35616C22.5791 7.1056 22.6047 6.84589 22.7025 6.60987C22.8003 6.37385 22.9658 6.17212 23.1782 6.03018C23.3906 5.88825 23.6404 5.8125 23.8958 5.8125C24.2384 5.8125 24.5669 5.94859 24.8092 6.19082C25.0514 6.43305 25.1875 6.7616 25.1875 7.10417Z" fill="black"/>
+            </svg>
+						</a>
+						</div>
+						<div class="icon">
+						<a href="https://t.me/sjwnsinw">
+							<svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.6036 1C31.5589 1 32.2796 1.83772 31.8941 3.39589L27.2182 25.428C26.8914 26.9945 25.9445 27.3715 24.6372 26.6427L13.4838 18.4079C13.4406 18.3768 13.4053 18.336 13.381 18.2886C13.3567 18.2413 13.344 18.1888 13.344 18.1356C13.344 18.0824 13.3567 18.0299 13.381 17.9826C13.4053 17.9352 13.4406 17.8944 13.4838 17.8633L26.3635 6.23576C26.9501 5.71638 26.2378 5.46506 25.4668 5.93418L9.30234 16.1293C9.25332 16.1612 9.19766 16.1816 9.13958 16.1889C9.0815 16.1961 9.02254 16.1901 8.96715 16.1711L2.10415 14.0014C0.579043 13.5575 0.579042 12.5103 2.44772 11.7647L29.9081 1.17592C30.1259 1.07148 30.3624 1.01166 30.6036 1V1Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+						</a>
+						</div>
+						<div class="icon">
+						<a href="#">
+							<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.9889 0.500002C13.309 0.498063 9.74855 1.83964 6.94516 4.28452C4.14177 6.72939 2.2785 10.1179 1.689 13.8432C1.09949 17.5686 1.82225 21.3875 3.72785 24.6162C5.63346 27.8448 8.59745 30.2724 12.0891 31.4641C12.8673 31.6119 13.1483 31.1242 13.1483 30.7251V28.0278C8.82496 28.9885 7.93147 25.8994 7.93147 25.8994C7.6455 24.9221 7.02331 24.0844 6.18051 23.542C4.77542 22.5592 6.2886 22.5739 6.2886 22.5739C6.77941 22.6444 7.24807 22.8288 7.65888 23.1131C8.0697 23.3974 8.41183 23.7741 8.65923 24.2145C10.0427 26.6458 12.262 25.9438 13.1699 25.5373C13.2416 24.73 13.5916 23.9754 14.1571 23.409C10.7128 23.0099 7.09562 21.6502 7.09562 15.5608C7.07279 13.9811 7.6459 12.4534 8.69526 11.2968C8.21851 9.92705 8.27267 8.42186 8.84658 7.09188C8.84658 7.09188 10.1436 6.66326 13.1051 8.71768C15.6432 8.00823 18.3202 8.00823 20.8583 8.71768C23.8198 6.66326 25.1168 7.09188 25.1168 7.09188C25.6863 8.42289 25.7404 9.92635 25.2681 11.2968C26.3155 12.4542 26.8861 13.982 26.8605 15.5608C26.8605 21.665 23.2577 23.0026 19.7919 23.4016C20.1637 23.7881 20.4502 24.2521 20.6317 24.7621C20.8132 25.2722 20.8856 25.8163 20.8439 26.3576V30.7177C20.8439 31.2424 21.1249 31.6341 21.9103 31.4567C25.3984 30.2604 28.3576 27.8303 30.2588 24.6012C32.1599 21.3721 32.8788 17.5546 32.287 13.8317C31.6951 10.1088 29.831 6.72324 27.0283 4.28073C24.2255 1.83821 20.6668 0.49806 16.9889 0.500002" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+						</a>
+						</div>
+						 </div>
+            </div>
+           
+        </div>
+    </div>
+
+<section class="teh">
+	<div class="container">
+		<div id="teh__wrapper">
+			<div class="teh__text">
+				<h1 class="intro__title">
+				І так
+				</h1>
+				<p class="intro__subtitle">
+					У крації розповім що до чого
+				</p>
+			</div>
+					<div class="block__teh">
+						<div class="teh__block">
+						<div class="teh__item">
+							<h1 class="teh__text-big">01</h1>
+							<div class="tehinfo__block">
+                    <div class="tehinfo__item">
+												<p class="tehinfo__subtext">
+             						ти знаходишся на сайті (Інформатиці)
+												сайт зроблений виключно для учнів школи
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+					<div class="block__teh-right">
+						<div class="teh__block-right">
+						<div class="teh__item-right">
+							<h1 class="teh__text-big-right">02</h1>
+							<div class="tehinfo__block-right">
+                    <div class="tehinfo__item-right">
+												<p class="tehinfo__subtext-right">
+             						тут будуть домашнє завдання з інформатики
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+					<div class="block__teh-center">
+						<div class="teh__block-center">
+						<div class="teh__item-center">
+							<h1 class="teh__text-big-center">03</h1>
+							<div class="tehinfo__block-center">
+                    <div class="tehinfo__item-center">
+												<p class="tehinfo__subtext-center">
+             						І останнє, якщо залишитись питання то ти знаєш куди писати посилання на соцмережі та допомогу щодо сайту я залишив
+												</p>
+										</div>
+								</div>
+						</div>          			
+					</div>
+					</div>
+		</div>	
+	</div>
+</section>
+
+<!-- Features -->
+<div class="container">
+    <div class="class">
+    	
+    	<div class="text__class">
+    		<h1 class="intro__title">Клас</h1>
+    		<p class="intro__subtitle">Тепер вибери клас у якому ти вчишся</p>
+    	</div>
+    	<div class="wrapp__class">
+    	<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">5</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">6</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">7</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">8</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">9</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">10</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		<div class="class__wrapper">
+    		<div class="btn__class">
+    			<div class="btn__grop">
+    					<a class="nav__linkBtn" href="#">
+    						<p class="num__class">11</p>
+    						<p class="class__subtext">Класс</p>
+    					</a>
+    			</div>
+    		</div>
+    	
+    		</div>
+    		</div>
+    </div>
+ </div>
+
+<div class="new">
+	<diw class="container">
+		<div class="new__wrapper">
+			<div class="new__text">Новини</div>
+			<div class="new__sub-text">
+				<p class="new__parag">Тут дошка з новинами</p>
+			</div>
+			<div class="new__error">
+				<h1 class="text__new">Новин покись немає</h1>
+			</div>
+		</div>
+	</diw>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+    	<div class="footer__logo">
+    		<a href="#" class="logo__link">
+    			<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M35 1H2C1.44772 1 1 1.44772 1 2V35C1 35.5523 1.44772 36 2 36H35C35.5523 36 36 35.5523 36 35V2C36 1.44772 35.5523 1 35 1Z" stroke="white"/>
+<path d="M11.002 26C10.4497 26 10.002 25.5523 10.002 25V15.34C10.002 14.7877 10.4497 14.34 11.002 14.34H11.114C11.6663 14.34 12.114 14.7877 12.114 15.34V25C12.114 25.5523 11.6663 26 11.114 26H11.002ZM11.058 12.096C10.6473 12.096 10.3027 11.964 10.024 11.7C9.76 11.436 9.628 11.1133 9.628 10.732C9.628 10.336 9.76 10.006 10.024 9.742C10.3027 9.478 10.6473 9.346 11.058 9.346C11.4687 9.346 11.806 9.478 12.07 9.742C12.3487 9.99133 12.488 10.3067 12.488 10.688C12.488 11.084 12.356 11.4213 12.092 11.7C11.828 11.964 11.4833 12.096 11.058 12.096Z" fill="white"/>
+<path d="M23.2849 26C22.7326 26 22.2849 25.5523 22.2849 25V12.514H17.9619C17.4333 12.514 17.0049 12.0855 17.0049 11.557V11.557C17.0049 11.0285 17.4333 10.6 17.9619 10.6H28.7859C29.3144 10.6 29.7429 11.0285 29.7429 11.557V11.557C29.7429 12.0855 29.3144 12.514 28.7859 12.514H24.4629V25C24.4629 25.5523 24.0152 26 23.4629 26H23.2849Z" fill="white"/>
+</svg>
+    		</a>
+    		 <p class="copyright">
+        © 2022 Всі права захищені
+      </p>
+    	</div>
+     <div class="footerText">
+     	 <div class="footer__text">
+        <a href="#" class="footer__link">Додому</a>
+        <a href="contact/index.html" class="footer__link">Контакти</a>
+        <a href="#" class="footer__link">Допомога</a>
+        <a href="#" class="footer__link">Домашнє завдання</a>
+      </div>
+     </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('#nav__link').click(
+function (e) {
+$('html, body').animate({scrollTop: '0px'}, 100);
+}
+);
+  $(function(){
+  $('a[href^="#teh__wrapper"]').click(function(){
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top}, 1200);//800 - длительность скроллинга в мс
+  return false;
+  });
+  });
+  </script>
+
+</body>
+</html>
